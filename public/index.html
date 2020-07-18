@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -19,17 +20,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>两周年纪念！</title>
-  </head>
-  <body>
+    <title>Untuk Dinda</title>
+</head>
+
+<body>
     <noscript>
-      You need to enable JavaScript to run this app.
+        You need to enable JavaScript to run this app.
     </noscript>
     <div id="root">
     </div>
     <script type="text/javascript">
         var extend = function extend(base) {
-            for (var _len = arguments.length, extensions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+            for (var _len = arguments.length, extensions = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key <
+                _len; _key++) {
                 extensions[_key - 1] = arguments[_key];
             }
 
@@ -44,9 +47,17 @@
             return 'hsla(' + h + ',' + s + '%,' + l + '%,' + a + ')';
         };
 
-        var Color = extend.bind(null, { h: 0, s: 100, l: 100, a: 1 });
+        var Color = extend.bind(null, {
+            h: 0,
+            s: 100,
+            l: 100,
+            a: 1
+        });
 
-        var Vector = extend.bind(null, { x: 0, y: 0 });
+        var Vector = extend.bind(null, {
+            x: 0,
+            y: 0
+        });
 
         var Particle = extend.bind(null, {
             pos: Vector(),
@@ -58,7 +69,20 @@
             color: Color()
         });
 
-        var colors = [Color({ h: 20, s: 100, l: 50 }), Color({ h: 200, l: 50 }), Color({ h: 300, l: 50 }), Color({ h: 100, l: 40 })];
+        var colors = [Color({
+            h: 20,
+            s: 100,
+            l: 50
+        }), Color({
+            h: 200,
+            l: 50
+        }), Color({
+            h: 300,
+            l: 50
+        }), Color({
+            h: 100,
+            l: 40
+        })];
 
         var animationLoop = function animationLoop(scope) {
             if (scope.animation) {
@@ -103,7 +127,7 @@
             particles: []
         };
 
-        ~function (scope) {
+        ~ function (scope) {
             var canvas = scope.ctx.canvas;
 
 
@@ -137,5 +161,6 @@
         }
     </script>
     <script type="text/javascript" src="./js/wmgwdw.js"></script>
-  </body>
+</body>
+
 </html>
